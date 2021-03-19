@@ -14,4 +14,11 @@ def home():
 def index():
     return dict(index = "Home")
 
+@route('/about')
+@view('about')
+def about():
+    return dict(about = "About")
+
+
+
 run(host="localhost", port=3000, debug=True, reloader=True)
